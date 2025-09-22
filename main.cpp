@@ -3,18 +3,23 @@ using namespace std;
 
 int main()
 {
-	int ans1 = 0, ans2 = 0;
-	for (int i = 1; i <= 100; i++)
+	string stars[5][5];
+
+	for (int i = 0; i < 5; i++)
 	{
-		ans1 += i;
+		for (int j = 0; j < 5; j++)
+		{
+			if (i > j)
+			{
+				cout << " ";
+			}
+			else
+			{
+				cout << "*";
+			}
+		}
+		cout << "\n";
 	}
-	cout << ans1 << endl;
-	
-	for (int i = 3; i <= 100; i += 3)
-	{
-		ans2 += i;
-	}
-	cout << ans2 << endl;
 
 	return 0;
 }
